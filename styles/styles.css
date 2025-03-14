@@ -1,0 +1,157 @@
+/* ===== General Page Styling ===== */
+
+body {
+  font-family: Arial, sans-serif; /* Sets the font to Arial for a clean look */
+  background-color: #f4f8fb; /* Light background color */
+  margin: 0; /* Removes default page margins */
+  padding: 0; /* Removes default padding */
+}
+
+/* ===== Header Section ===== */
+
+header {
+  background-color: #28a745; /* Green header background */
+  color: white; /* White text for contrast */
+  text-align: center; /* Centers text */
+  padding: 20px; /* Adds spacing inside the header */
+}
+
+/* ===== Navigation Bar ===== */
+
+nav {
+  background-color: #333; /* Dark gray background */
+  padding: 10px 0; /* Adds vertical spacing */
+}
+
+nav ul {
+  list-style: none; /* Removes bullet points from list */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+  text-align: center; /* Centers the navigation menu */
+}
+
+nav ul li {
+  display: inline; /* Makes menu items appear in a row */
+  margin: 0 15px; /* Adds spacing between menu items */
+}
+
+nav ul li a {
+  color: white; /* Makes text white */
+  text-decoration: none; /* Removes underline from links */
+  font-size: 16px; /* Sets font size */
+}
+
+/* ===== Main Content Area ===== */
+
+main {
+  padding: 20px; /* Adds space around the main content */
+}
+
+/* ===== Card Section (Content Box) ===== */
+
+.card {
+  background: white; /* Sets the background to white */
+  padding: 20px; /* Adds padding inside the card */
+  margin: 20px auto; /* Centers the card with margin */
+  max-width: 1200px; /* Limits the width to 800px */
+  border-radius: 8px; /* Rounds the corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adds a light shadow for depth */
+  overflow: scroll;
+}
+
+/* ===== Table Styling ===== */
+
+table {
+  width: 100%; /* Makes the table take full width */
+  border-collapse: collapse; /* Merges borders for a cleaner look */
+  margin-top: 10px; /* Adds space above the table */
+}
+
+/* Applies a border to the table, headers, and cells */
+table,
+th,
+td {
+  border: 1px solid #ddd; /* Light gray border */
+}
+
+/* Adds padding inside table cells and aligns text */
+th,
+td {
+  padding: 10px; /* Adds spacing inside table cells */
+  text-align: left; /* Aligns text to the left */
+}
+
+/* Styles the table header */
+th {
+  background-color: #007bff; /* Blue background for headers */
+  color: white; /* White text for contrast */
+}
+
+.testing {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: black;
+  opacity: 0.5;
+}
+.content {
+  z-index: 1;
+}
+.content .bg {
+  color: #f4f8fb;
+
+  text-align: center;
+  font-size: 90px;
+}
+.pbg {
+  color: aliceblue;
+  text-align: center;
+  font-size: 40px;
+}
+@media (max-width: 640px) {
+  h1 {
+    font-size: 24px;
+  }
+  nav ul li a {
+    font-size: 12px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  .table-container {
+    width: 1300px;
+    overflow: scroll;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    font-size: 28px;
+  }
+  nav ul li a {
+    font-size: 14px; /* Sets font size */
+  }
+  h2 {
+    font-size: 24px;
+  }
+  .table-container {
+    width: 1300px;
+    overflow: scroll;
+  }
+}
